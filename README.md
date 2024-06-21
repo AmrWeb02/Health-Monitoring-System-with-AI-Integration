@@ -21,7 +21,7 @@ How users can get started with the project
 To get started, you'll need the following:
 
 Hardware:
-NodeMCU (ESP8266) microcontroller
+ESP32 microcontroller
 MAX30102 oximeter sensor
 LCD
 Jumper wires and breadboard
@@ -34,7 +34,7 @@ An AI API with relevant documentation E.g. GEMINI
 The project's code is organized within a GitHub repository for clarity. A detailed installation and usage guide will be added in the future, covering:
 
 Hardware assembly instructions
-NodeMCU code installation and configuration
+ESP32 code installation and configuration
 Web interface setup and deployment
 Data storage and retrieval instructions
 AI API integration steps
