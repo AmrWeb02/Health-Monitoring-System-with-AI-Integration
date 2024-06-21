@@ -9,6 +9,7 @@ Real-time health data: Continuously monitor your blood oxygen saturation (SpO2) 
 Immediate feedback: View sensor readings displayed in real-time on an LCD screen for instant insights into your health status.
 Data storage and visualization: Securely transmit sensor data via WiFi to a MySQL database. A user-friendly web interface, built with HTML, CSS, and JavaScript, allows you to visualize and analyze your health data effortlessly.
 AI-powered insights: Integrate with a chosen AI API to unlock advanced analysis of your health information. Gain personalized insights and recommendations tailored to your unique health profile, fostering a deeper understanding of your well-being.
+
 Why the project is useful
 
 This project empowers users with:
