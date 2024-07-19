@@ -16,7 +16,7 @@ Enhanced health awareness: Real-time access to health data and AI-driven interpr
 Improved self-management: Proactively manage your health with the user-friendly interface, allowing you to track trends and identify potential issues early on.
 Personalized insights: The AI integration provides valuable feedback tailored to your unique health profile.
 
-To get started, you'll need the following:
+# To get started, you'll need the following:
 
 ⬝ Hardware:
 1. ESP32 or any microcontroller that supports Wi-Fi
@@ -33,3 +33,17 @@ To get started, you'll need the following:
 1. Web Development skills: Familiarity with HTML, CSS, Javascript, and PHP (Including browser APIs like Fetch, Geo-Location and third-party APIs like GEMINI)
 2. Data communication: REST APIs, Data exchange format (JSON)
 
+# Installation
+1. Open the Arduino file named "gamaX" and adjust the code by;
+   ⬝ Removing undesired libraries
+   ⬝ Change network credentials (SSID, password)
+   ⬝ Change server's URL to include your own domain and make sure to specify the endpoint that includes the PHP script responsible for fetching the data and storing it into the database
+   ⬝ Remove lines of code that are irrelevant to you (additional features like LCD and power management)
+   ⬝ Adjust the payload called "postData" to carry your variables
+2. Open live.html and adjust the code by;
+   ⬝ Add the API key obtained from GEMINI to the variable in line 153
+   ⬝ Change the address used in any fetch function to your website domain and endpoint "jsonfile.php"
+3. Open jsonfile.php and adjust the code by:
+   ⬝ Using your database credentials (server name, database name, username, and password)
+4. Open index.php and repeat the previous steps
+5. Open mychart.js and adjust the URL by changing the domain name
