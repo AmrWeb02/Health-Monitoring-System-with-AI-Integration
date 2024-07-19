@@ -1,4 +1,4 @@
-# Health-Monitoring-System-with-AI-Integration
+# IoT-Platform-with-AI-Integration
 An application enablement platform based on REST API
 
 
