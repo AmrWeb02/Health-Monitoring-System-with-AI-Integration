@@ -1,4 +1,4 @@
-# Health-Monitoring-System-with-AI-Feedback
+# Health-Monitoring-System-with-AI-Integration
 An application enablement platform based on REST API
 
 
