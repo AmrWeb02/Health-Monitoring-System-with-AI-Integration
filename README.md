@@ -15,6 +15,8 @@ This project empowers users with:
 Enhanced health awareness: Real-time access to health data and AI-driven interpretations enable informed decision-making about your well-being.
 Improved self-management: Proactively manage your health with the user-friendly interface, allowing you to track trends and identify potential issues early on.
 Personalized insights: The AI integration provides valuable feedback tailored to your unique health profile.
+# Flow diagram of the project
+![WorkFlowDiagrarm](https://github.com/user-attachments/assets/ee209f27-bc29-4d13-9b57-c6834fba109f)
 
 # To get started, you'll need the following:
 
@@ -47,5 +49,3 @@ Personalized insights: The AI integration provides valuable feedback tailored to
    ⬝ Using your database credentials (server name, database name, username, and password)
 5. Open index.php and repeat the previous steps
 6. Open mychart.js and adjust the URL by changing the domain name
-# Flow diagram of the project
-![WorkFlowDiagrarm](https://github.com/user-attachments/assets/ee209f27-bc29-4d13-9b57-c6834fba109f)
