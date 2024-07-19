@@ -1,0 +1,201 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color:rgb(105 227 182);
+}
+.gridcontainer{
+  display:grid;
+  background-color: rgb(234, 229, 225);
+  grid-template-columns: repeat(12,1fr);
+  gap: 30px 20px;
+}
+div.gridcontainer button{
+  grid-area:5/8/5/6;
+  cursor: pointer;
+  z-index: 99;
+  padding: 0.5em;
+  border-radius: 2em;
+  background: aquamarine;
+}
+div#myFlex{
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+div#myFlex p#status{
+  font-size: 30px;
+  font-weight: bolder;
+}
+div#myFlex p#botResponse{
+    padding-left: 7em;
+    padding-right: 7em;
+    font-weight: bolder;
+}
+.card{
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+}
+.header{
+  grid-area: 1 / 1 / 1 / 13;
+  background-color: rgb(51,204,204);
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header h2{
+  width: 100px;
+  color: #186899;
+}
+
+.header a{
+  width: 100px;
+  text-decoration: none;
+  color:#186899;
+}
+.header img{
+  width: 100px;
+  max-height: 100px;
+}
+.spo2card{
+  grid-area: 2 / 2 / 5 / 6;
+  height: 300px;
+  box-shadow: 10px 10px 5px #00dcff;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+  perspective: 1000px;
+}
+.spo2card:hover{
+  cursor:pointer;
+  transform: rotateY(-180deg);
+  box-shadow: 10px 10px 10px 5px #ffffff;
+}
+.heartcard{
+  grid-area: 2 / 8 / 5 / 12;
+  height: 300px;
+  box-shadow: 10px 10px 64px #00dcff;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 2s;
+  perspective: 1000px;
+}
+.heartcard:hover{
+  cursor:pointer;
+  transform: rotateY(-180deg);
+  box-shadow: 10px 10px 10px 5px #ffffff;
+}
+.face{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image:linear-gradient(to bottom, #ffffff, #71b9c4, #00dcff);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+div.back.face svg{
+  margin-bottom: 2em;
+}
+.chart1{
+  grid-area: 5 / 2 / 8 / 12;
+  height: 200px;
+}
+.chart2{
+  grid-area: 8 / 2 / 11 / 12;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+body h1:nth-child(1){
+  text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.left, .right{
+    display: flex;
+    align-items: center;
+}
+#myItem1.ldBar path.mainline {
+    stroke-width: 9;
+    stroke: #09f;
+    /*data-stroke=red, data-stroke-width="20" written as html attributes
+    In index.html won't be affected because of specificity rule,
+    Priority goes to line 2,3 in this declaration block */
+    stroke-linecap: round;
+  }
+#myItem2.ldBar path.mainline {
+    stroke-width: 9;
+    stroke: #09f;
+    /*data-stroke=red, data-stroke-width="20" written as html attributes
+    In index.html won't be affected because of specificity rule,
+    Priority goes to line 2,3 in this declaration block */
+    stroke-linecap: round;
+  }
+  .ldBar path.baseline {
+    stroke-width: 12;
+    /*stroke: #f1f2f3;*/
+    stroke-linecap: round;
+    filter:url(#custom-shadow);
+  }
+  .ldBar-label {
+    color: #09f;
+    font-family: 'varela round';
+    font-size: 1em;
+    font-weight: 900;
+  }
+  /*.ldBar-label:after {
+    content: "USD";
+} */
+#myItem2 .ldBar-label:after{
+    content:"%";
+  }
+
+#myItem3 .ldBar-label:after{
+    content:" BPM";
+  }
+
+/*
+Charts
+*/
+.chartMenu p {
+  padding: 10px;
+  font-size: 20px;
+}
+.chartCard {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.chartBox {
+  width: 700px;
+  padding: 0 100px 0 30px;
+  border-radius: 20px;
+  border: solid 3px rgba(54, 162, 235, 1);
+  background: white;
+}
