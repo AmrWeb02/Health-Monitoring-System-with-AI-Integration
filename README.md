@@ -43,7 +43,9 @@ Personalized insights: The AI integration provides valuable feedback tailored to
 2. Open live.html and adjust the code by;
    ⬝ Add the API key obtained from GEMINI to the variable in line 153
    ⬝ Change the address used in any fetch function to your website domain and endpoint "jsonfile.php"
-3. Open jsonfile.php and adjust the code by:
+4. Open jsonfile.php and adjust the code by:
    ⬝ Using your database credentials (server name, database name, username, and password)
-4. Open index.php and repeat the previous steps
-5. Open mychart.js and adjust the URL by changing the domain name
+5. Open index.php and repeat the previous steps
+6. Open mychart.js and adjust the URL by changing the domain name
+# Flow diagram of the project
+![WorkFlowDiagrarm](https://github.com/user-attachments/assets/ee209f27-bc29-4d13-9b57-c6834fba109f)
